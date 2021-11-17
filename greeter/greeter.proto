@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/mindintransit/greeter/greeter";
+
+package greeter;
+
+service Greeter {
+  rpc SayHello(Name) returns (Greeting) {}
+}
+
+message Name {
+  string name = 1;
+}
+
+message Greeting {
+  string greeting = 1;
+}
