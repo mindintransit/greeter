@@ -4,4 +4,5 @@ proto_library(
         "greeter.proto"
     ],
     visibility = ["//visibility:public"],
+    deps = [],
 )
